@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import fr.b3.c1.tvshow.entity.User;
 
 @Repository
-public interface UserJpaRepository extends JpaRepository<User, Long> {
+public interface UserJpaRepository extends JpaRepository<User, Long>, UserRepository {
 	
 	public User findByNickname(String nickname);
 }
